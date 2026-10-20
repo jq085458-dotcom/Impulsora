@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Impulso IA | Publicidad con inteligencia artificial</title>
+<meta name="description" content="Creamos anuncios con inteligencia artificial para presentar tus productos, destacar tu negocio y llegar a más clientes en redes sociales.">
+<meta name="theme-color" content="#12101f">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Impulso IA | Publicidad con inteligencia artificial">
+<meta property="og:description" content="Anuncios creados con IA para tu negocio. Contanos tu idea y la convertimos en campaña.">
+<meta property="og:locale" content="es_AR">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='26' fill='%238b5cf6'/%3E%3Ctext x='50' y='66' font-size='46' font-family='Arial' font-weight='900' text-anchor='middle' fill='%2312101f'%3EIA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#12101f;--panel:#1c1932;--text:#f4f1ff;--muted:#b4afd0;--violet:#8b5cf6;--cyan:#22d3ee;--coral:#ff6b6b;--line:rgba(255,255,255,.13);--r:20px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--bg);color:var(--text);font:400 1.02rem/1.65 "DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","DM Sans",system-ui,sans-serif;line-height:1.08;letter-spacing:-.03em;margin:0}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--cyan);outline-offset:3px;border-radius:8px}
+.wrap{width:min(1120px,92%);margin:auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 22px;border-radius:999px;font:700 1rem "DM Sans",sans-serif;border:2px solid transparent;cursor:pointer;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.main{background:var(--cyan);color:var(--bg)}
+.btn.ghost{border-color:var(--line);color:var(--text);background:transparent}
+.btn.ghost:hover{background:rgba(255,255,255,.07)}
+header{position:sticky;top:0;z-index:20;background:rgba(18,16,31,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;font:800 1.25rem "Bricolage Grotesque",sans-serif;letter-spacing:-.03em}
+.logo{width:36px;height:36px;border-radius:11px;background:var(--violet);display:grid;place-items:center;color:var(--bg);font-weight:800;font-size:1rem}
+.links{display:flex;align-items:center;gap:26px;color:var(--muted);font-weight:500}
+.links a:hover{color:var(--text)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--text);width:44px;height:44px;border-radius:12px;font-size:1.3rem;cursor:pointer}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:72px 0 64px}
+.hero h1{font-size:clamp(2.7rem,6vw,4.9rem);font-weight:800}
+.hero p{color:var(--muted);font-size:1.15rem;max-width:30em;margin:22px 0 28px}
+.row{display:flex;flex-wrap:wrap;gap:12px}
+.stack{position:relative;height:460px}
+.stack .ad{position:absolute;width:min(250px,56%)}
+.stack .ad:nth-child(1){left:0;top:30px;transform:rotate(-6deg)}
+.stack .ad:nth-child(2){left:30%;top:0;transform:rotate(3deg);z-index:2}
+.stack .ad:nth-child(3){right:0;top:110px;transform:rotate(8deg)}
+.ad{aspect-ratio:4/5;border-radius:var(--r);padding:20px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden;background:linear-gradient(160deg,var(--a),var(--b));color:var(--t,#fff);box-shadow:0 22px 50px rgba(0,0,0,.35)}
+.ad .art{position:absolute;top:14px;right:16px;font-size:4.6rem;line-height:1;filter:drop-shadow(0 8px 14px rgba(0,0,0,.25))}
+.ad .tag{position:absolute;top:18px;left:18px;font-size:.78rem;font-weight:700;background:rgba(0,0,0,.28);color:#fff;padding:4px 10px;border-radius:999px}
+.ad h3{font-size:1.6rem;font-weight:800}
+.ad p{margin:6px 0 14px;font-size:.9rem;opacity:.9;line-height:1.4}
+.ad .chip{align-self:flex-start;background:var(--t,#fff);color:var(--a);font-weight:700;font-size:.82rem;padding:7px 14px;border-radius:999px}
+.ad.story{aspect-ratio:9/16}
+.ad.wide{aspect-ratio:auto;min-height:260px;grid-column:span 2}
+section{padding:68px 0}
+.head{max-width:640px;margin-bottom:34px}
+.head h2{font-size:clamp(2rem,4.4vw,3.2rem);font-weight:800}
+.head p{color:var(--muted);margin:12px 0 0}
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px}
+.filters button{padding:9px 18px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--text);font:500 .95rem "DM Sans",sans-serif;cursor:pointer}
+.filters button[aria-pressed=true]{background:var(--violet);border-color:var(--violet);font-weight:700}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
+.gallery .ad[hidden]{display:none}
+.note{color:var(--muted);font-size:.88rem;margin-top:18px}
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.svc article{padding:30px;border-right:1px solid var(--line)}
+.svc article:last-child{border-right:0}
+.svc span{font-size:1.8rem}
+.svc h3{font-size:1.35rem;margin:14px 0 8px}
+.svc p{margin:0;color:var(--muted)}
+ol.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;counter-reset:s}
+.steps li{counter-increment:s;padding:26px;background:var(--panel);border-radius:var(--r)}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--cyan);color:var(--bg);font-weight:800;margin-bottom:16px}
+.steps h3{font-size:1.3rem;margin-bottom:8px}
+.steps p{margin:0;color:var(--muted)}
+.contact{display:grid;grid-template-columns:1fr 1.1fr;gap:40px;background:var(--panel);border-radius:28px;padding:clamp(24px,5vw,56px)}
+.contact h2{font-size:clamp(2rem,4vw,3rem);font-weight:800}
+.contact>div>p{color:var(--muted);margin:14px 0 22px}
+form{display:grid;gap:14px}
+label{display:grid;gap:6px;font-weight:500;font-size:.92rem}
+input,select,textarea{width:100%;padding:13px 14px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--text);font:inherit}
+textarea{min-height:110px;resize:vertical}
+#status{min-height:1.4em;font-size:.92rem;color:var(--cyan);margin:0}
+#status.err{color:var(--coral)}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.9rem}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+.top{position:fixed;right:18px;bottom:18px;width:46px;height:46px;border-radius:50%;border:0;background:var(--violet);color:#fff;font-size:1.2rem;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .2s}
+.top.show{opacity:1;pointer-events:auto}
+@media(max-width:860px){
+.menu-btn{display:block}
+.links{position:absolute;left:0;right:0;top:72px;flex-direction:column;align-items:stretch;gap:0;background:var(--bg);border-bottom:1px solid var(--line);padding:8px 4%;display:none}
+.links.open{display:flex}
+.links a{padding:14px 0;border-bottom:1px solid var(--line)}
+.links a.btn{margin-top:12px;border-bottom:2px solid transparent}
+.hero,.contact{grid-template-columns:1fr}
+.hero{padding-top:44px}
+.stack{height:400px}
+.gallery{grid-template-columns:1fr 1fr}
+.svc,ol.steps{grid-template-columns:1fr}
+.svc article{border-right:0;border-bottom:1px solid var(--line)}
+.svc article:last-child{border-bottom:0}
+}
+@media(max-width:520px){.gallery{grid-template-columns:1fr}.ad.wide{grid-column:auto}.stack{height:360px}.ad h3{font-size:1.4rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap"><nav aria-label="Principal">
+<a class="brand" href="#inicio"><span class="logo">IA</span>Impulso IA</a>
+<button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="links">☰</button>
+<div class="links" id="links">
+<a href="#ejemplos">Ejemplos</a><a href="#servicios">Servicios</a><a href="#proceso">Cómo trabajamos</a>
+<a class="btn main" href="#contacto">Pedir presupuesto</a>
+</div>
+</nav></div>
+</header>
+
+<main>
+<div class="wrap hero" id="inicio">
+<div>
+<h1>Anuncios que se hacen ver.</h1>
+<p>Creamos anuncios con inteligencia artificial para presentar tus productos, destacar tu negocio y captar la atención de tus clientes en redes sociales.</p>
+<div class="row">
+<a class="btn main" href="#contacto">Quiero mi anuncio</a>
+<a class="btn ghost" href="#ejemplos">Ver ejemplos</a>
+</div>
+</div>
+<div class="stack" aria-label="Ejemplos de anuncios">
+<div class="ad" style="--a:#7c2d12;--b:#f59e0b"><span class="tag">Instagram</span><span class="art">☕</span><h3>Tu mañana, en taza grande.</h3><p>2x1 en café de especialidad.</p><span class="chip">Probalo hoy</span></div>
+<div class="ad" style="--a:#4c1d95;--b:#ec4899"><span class="tag">Historia</span><span class="art">👗</span><h3>Nueva colección.</h3><p>Llegó lo que estabas esperando.</p><span class="chip">Ver looks</span></div>
+<div class="ad" style="--a:#0e7490;--b:#164e63"><span class="tag">Facebook</span><span class="art">🏡</span><h3>Tu hogar te espera.</h3><p>Visitá nuestras propiedades.</p><span class="chip">Agendar visita</span></div>
+</div>
+</div>
+
+<section id="ejemplos">
+<div class="wrap">
+<div class="head"><h2>Así pueden verse tus anuncios</h2><p>Ejemplos ilustrativos con marcas ficticias. Elegí un rubro y mirá cómo lo resolvemos.</p></div>
+<div class="filters" role="group" aria-label="Filtrar ejemplos">
+<button aria-pressed="true" data-f="todos">Todos</button>
+<button aria-pressed="false" data-f="gastronomia">Gastronomía</button>
+<button aria-pressed="false" data-f="moda">Moda y belleza</button>
+<button aria-pressed="false" data-f="servicios">Servicios</button>
+</div>
+<div class="gallery" id="gallery">
+<div class="ad" data-c="gastronomia" style="--a:#7c2d12;--b:#f59e0b"><span class="tag">Post</span><span class="art">☕</span><h3>Tu mañana, en taza grande.</h3><p>Café Aurora · 2x1 de lunes a viernes.</p><span class="chip">Probalo hoy</span></div>
+<div class="ad" data-c="moda" style="--a:#4c1d95;--b:#ec4899"><span class="tag">Post</span><span class="art">👗</span><h3>Nueva colección. Cero filtros.</h3><p>Nómade · Envíos a todo el país.</p><span class="chip">Ver looks</span></div>
+<div class="ad" data-c="servicios" style="--a:#14532d;--b:#22c55e;--t:#fff"><span class="tag">Post</span><span class="art">💪</span><h3>La primera semana va por nuestra cuenta.</h3><p>Pulso Gym · Cupos limitados.</p><span class="chip">Reservar</span></div>
+<div class="ad wide" data-c="gastronomia" style="--a:#7f1d1d;--b:#ea580c"><span class="tag">Banner web</span><span class="art">🍕</span><h3>Pizza de horno de barro. Pedila antes de que se enfríe.</h3><p>Sabor Criollo · Delivery en 30 minutos.</p><span class="chip">Pedir ahora</span></div>
+<div class="ad story" data-c="moda" style="--a:#134e4a;--b:#5eead4;--t:#fff"><span class="tag">Historia</span><span class="art">🌿</span><h3>Piel que habla por vos.</h3><p>Lúmen Skin · Rutina de 3 pasos.</p><span class="chip" style="color:#134e4a">Descubrir</span></div>
+<div class="ad" data-c="servicios" style="--a:#1e3a8a;--b:#38bdf8"><span class="tag">Post</span><span class="art">🏡</span><h3>Tu hogar te está esperando.</h3><p>Casa Brisa · Visitas sin cargo.</p><span class="chip">Agendar visita</span></div>
+</div>
+<p class="note">Cada pieza se adapta a tu marca: colores, tipografía, formato y mensaje.</p>
+</div>
+</section>
+
+<section id="servicios">
+<div class="wrap">
+<div class="head"><h2>Publicidad pensada para destacar</h2><p>Soluciones creativas para emprendedores, comercios y marcas que quieren comunicar mejor.</p></div>
+<div class="svc">
+<article><span>🎨</span><h3>Anuncios con IA</h3><p>Imágenes publicitarias llamativas para presentar productos, promociones y servicios.</p></article>
+<article><span>📱</span><h3>Contenido para redes</h3><p>Piezas visuales adaptadas a Instagram, Facebook, TikTok y otras plataformas.</p></article>
+<article><span>💡</span><h3>Ideas y conceptos</h3><p>Mensajes y propuestas visuales alineadas con tu negocio.</p></article>
+</div>
+</div>
+</section>
+
+<section id="proceso">
+<div class="wrap">
+<div class="head"><h2>De tu idea a un anuncio</h2><p>Un proceso simple para convertir lo que imaginás en una propuesta visual.</p></div>
+<ol class="steps">
+<li><h3>Contanos tu idea</h3><p>Explicanos qué ofrecés, a quién querés llegar y qué querés comunicar.</p></li>
+<li><h3>Diseñamos la propuesta</h3><p>Combinamos creatividad y herramientas de IA para desarrollar el concepto visual.</p></li>
+<li><h3>Publicá tu anuncio</h3><p>Recibís la pieza lista para presentar tu negocio en medios digitales.</p></li>
+</ol>
+</div>
+</section>
+
+<section id="contacto">
+<div class="wrap contact">
+<div>
+<h2>Tu próxima campaña empieza con una idea.</h2>
+<p>Completá el formulario y te respondemos por WhatsApp con una propuesta para tu negocio.</p>
+<a class="btn ghost" id="waDirect" href="#" target="_blank" rel="noopener noreferrer">Escribir directo por WhatsApp</a>
+</div>
+<form id="form" novalidate>
+<label>Tu nombre<input name="nombre" autocomplete="name" required></label>
+<label>Tu negocio<input name="negocio" autocomplete="organization" required></label>
+<label>¿Qué querés promocionar?
+<select name="tipo"><option>Un producto</option><option>Un servicio</option><option>Una promoción u oferta</option><option>Mi marca completa</option></select></label>
+<label>Contanos tu idea<textarea name="idea" placeholder="Ej: quiero anunciar mi nueva carta de verano en Instagram"></textarea></label>
+<button class="btn main" type="submit">Enviar por WhatsApp</button>
+<p id="status" role="status" aria-live="polite"></p>
+</form>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap foot">
+<span>© <span id="year"></span> Impulso IA. Publicidad con inteligencia artificial.</span>
+<span>Creatividad para llevar tus ideas más lejos.</span>
+</div>
+</footer>
+<button class="top" id="top" aria-label="Volver arriba">↑</button>
+
+<script>
+/* ===== CONFIGURÁ ESTO ANTES DE PUBLICAR =====
+   Tu número de WhatsApp con código de país, sin + ni espacios.
+   Argentina (celular): 549 + código de área sin 0 + número. Ej: 5491123456789 */
+var WHATSAPP = "5493883135567";
+/* ============================================ */
+
+var ok = /^\d{8,15}$/.test(WHATSAPP);
+function wa(text){ return "https://wa.me/" + WHATSAPP + (text ? "?text=" + encodeURIComponent(text) : ""); }
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+var links = document.getElementById("links"), mb = document.getElementById("menuBtn");
+mb.addEventListener("click", function(){
+  var o = links.classList.toggle("open");
+  mb.setAttribute("aria-expanded", o);
+  mb.textContent = o ? "✕" : "☰";
+});
+links.addEventListener("click", function(e){
+  if (e.target.tagName === "A") { links.classList.remove("open"); mb.setAttribute("aria-expanded", "false"); mb.textContent = "☰"; }
+});
+
+document.querySelectorAll(".filters button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll(".filters button").forEach(function(x){ x.setAttribute("aria-pressed", x === b); });
+    document.querySelectorAll("#gallery .ad").forEach(function(ad){
+      ad.hidden = b.dataset.f !== "todos" && ad.dataset.c !== b.dataset.f;
+    });
+  });
+});
+
+var direct = document.getElementById("waDirect");
+direct.addEventListener("click", function(e){
+  if (!ok) { e.preventDefault(); showMsg("Falta configurar el número de WhatsApp en el código (variable WHATSAPP).", true); return; }
+  direct.href = wa("Hola, quiero consultar por un anuncio con IA");
+});
+
+var st = document.getElementById("status");
+function showMsg(t, err){ st.textContent = t; st.className = err ? "err" : ""; }
+
+document.getElementById("form").addEventListener("submit", function(e){
+  e.preventDefault();
+  var f = e.target, n = f.nombre.value.trim(), b = f.negocio.value.trim();
+  if (!n || !b) { showMsg("Completá tu nombre y el nombre de tu negocio.", true); return; }
+  if (!ok) { showMsg("Falta configurar el número de WhatsApp en el código (variable WHATSAPP).", true); return; }
+  var msg = "Hola, soy " + n + " de " + b + ". Quiero promocionar: " + f.tipo.value.toLowerCase() + "." + (f.idea.value.trim() ? " Mi idea: " + f.idea.value.trim() : "");
+  showMsg("Abriendo WhatsApp…");
+  window.open(wa(msg), "_blank", "noopener");
+});
+
+var toTop = document.getElementById("top");
+window.addEventListener("scroll", function(){ toTop.classList.toggle("show", window.scrollY > 600); }, {passive:true});
+toTop.addEventListener("click", function(){ window.scrollTo({top:0}); });
+</script>
+<noscript><p style="text-align:center;padding:16px">Activá JavaScript para usar el formulario y los filtros.</p></noscript>
+</body>
+</html>
